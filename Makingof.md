@@ -1,4 +1,4 @@
-# 📓 Making Of — Portfólio Django (Ficha 6)
+# Making Of — Portfólio Django (Ficha 6)
 
 > **Autor:** [Lourenço Madeira]  
 > **Curso:** LEI — Lusófona  
@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Introdução
+## Introdução
 
 Este documento é o "diário de bordo" do processo de modelação do meu portfólio pessoal em Django.
 Regista todas as decisões tomadas, erros identificados e corrigidos, e a evolução do modelo ao longo do tempo.
@@ -16,13 +16,13 @@ Regista todas as decisões tomadas, erros identificados e corrigidos, e a evolu�
 
 ---
 
-## 🖼️ Fotografia
+## Fotografia
 
 ![foto](media/makingof/Captura%20de%20ecrã%202026-04-07%20174115.png)
 
 ---
 
-## 🔄 Evolução do Modelo
+## Evolução do Modelo
 
 ### Versão 1 — Rascunho inicial
 
@@ -63,11 +63,11 @@ MakingOf → (todas as entidades)
 
 ---
 
-## ✅ Justificações de Modelação 
+## Justificações de Modelação 
 
 
 
-### 🎓 Licenciatura
+### Licenciatura
 
 **Decisão 1 — Incluir o campo `sigla`**  
 Justificação: No site da Lusófona e em contextos profissionais, os cursos são frequentemente referidos pela sigla (ex: LEI). Faz sentido guardar este campo separado do nome completo, para poder usar um ou outro conforme o contexto.
@@ -77,7 +77,7 @@ Justificação: O portfólio serve como cartão de visitas. Incluir o link para 
 
 ---
 
-### 📚 UnidadeCurricular
+### UnidadeCurricular
 
 **Decisão 1 — Incluir `ano` e `semestre` separados**  
 Justificação: Podia guardar apenas o semestre global (ex: semestre 3 = ano 2, semestre 1). Mas guardar `ano` e `semestre` separados torna as consultas muito mais simples — por exemplo, para mostrar todas as UCs do 2º ano basta filtrar `ano=2`.
@@ -90,7 +90,7 @@ Justificação: Uma UC pode ter vários docentes (ex: teórica e prática com pr
 
 ---
 
-### 👨‍🏫 Docente *(entidade adicional)*
+### Docente *(entidade adicional)*
 
 **Decisão 1 — Criar entidade própria em vez de campo de texto**  
 Justificação: Se guardasse os docentes como texto simples na UC, seria impossível pesquisar "todas as UCs de um docente" ou mostrar a página de um docente com as suas UCs. A entidade própria permite estas consultas e evita repetição de dados.
@@ -100,7 +100,7 @@ Justificação: O enunciado pede explicitamente "ligação à página pessoal no
 
 ---
 
-### 💻 Projeto
+### Projeto
 
 **Decisão 1 — Incluir `url_github`**  
 Justificação: O enunciado refere que o link para o repositório GitHub é "muito importante para entrevistas de emprego". É um dos campos mais importantes do portfólio, pois demonstra código real.
@@ -113,7 +113,7 @@ Justificação: Um vídeo de demonstração do projeto é muito mais expressivo 
 
 ---
 
-### 🛠️ Tecnologia
+### Tecnologia
 
 **Decisão 1 — Incluir `nivel_interesse` como IntegerField (1 a 5)**  
 Justificação: O enunciado pede "uma forma de representar o nível de interesse ou preferência". Optei por uma escala numérica de 1 a 5 porque é simples de usar no template (ex: mostrar estrelas), fácil de ordenar e comparar.
@@ -123,7 +123,7 @@ Justificação: Há muitos tipos de tecnologias (linguagens, frameworks, bases d
 
 ---
 
-### 📄 TFC
+### TFC
 
 **Decisão 1 — Incluir `interesse` como BooleanField**  
 Justificação: O enunciado pede "uma forma de classificar ou destacar os TFCs de maior interesse". Um campo booleano simples (True/False) permite marcar os favoritos e mostrá-los em destaque no portfólio.
@@ -133,7 +133,7 @@ Justificação: Os TFCs são mais relevantes quando apresentados cronologicament
 
 ---
 
-### 🏆 Competencia
+### Competencia
 
 **Decisão 1 — Incluir `nivel` como CharField com escolhas**  
 Justificação: Nos CVs as competências têm sempre um nível associado (Básico, Intermédio, Avançado). Este campo permite apresentar as competências de forma profissional, à semelhança de um CV real.
@@ -143,7 +143,7 @@ Justificação: Uma competência pode ser demonstrada em vários projetos (ex: "
 
 ---
 
-### 📅 Formacao
+### Formacao
 
 **Decisão 1 — Incluir `data_inicio` e `data_fim` separados**  
 Justificação: Com dois campos de data, posso ordenar cronologicamente (`order_by('data_inicio')`), calcular a duração da formação, e apresentar o percurso de forma timeline no portfólio.
@@ -153,7 +153,7 @@ Justificação: Formações com certificado online (ex: Coursera, Udemy) têm um
 
 ---
 
-### 📝 MakingOf
+### MakingOf
 
 **Decisão 1 — Incluir `entidade_relacionada` como CharField**  
 Justificação: Cada entrada do Making Of documenta o processo de modelação de uma entidade específica. Este campo permite filtrar o Making Of por entidade — por exemplo, mostrar só os registos relacionados com a entidade `Projeto`.
@@ -163,7 +163,7 @@ Justificação: O enunciado pede explicitamente que o uso de IA seja documentado
 
 ---
 
-## 🐛 Erros Identificados e Correções
+## Erros Identificados e Correções
 
 | # | Erro | Correção |
 |---|---|---|

@@ -1,0 +1,22 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Projetos</h2>
+<section>
+    {% for projeto in projetos %}
+    <article>
+        <header>
+            <h3>{{ projeto.nome }}</h3>
+            <p>{{ projeto.unidade_curricular.nome }} — {{ projeto.ano }}</p>
+        </header>
+        <section>
+            <h4>Tecnologias</h4>
+            <ul>
+                {% for tec in projeto.tecnologias.all %}
+                    <li>{{ tec.nome }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

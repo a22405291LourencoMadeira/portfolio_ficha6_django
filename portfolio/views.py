@@ -49,3 +49,22 @@ def edita_projeto_view(request, projeto_id):
 def apaga_projeto_view(request, projeto_id):
     Projeto.objects.get(id=projeto_id).delete()
     return redirect('projetos')
+
+def nova_tecnologia_view(request):
+    form = TecnologiaForm(request.POST or None, request.FILES)
+    if form.is_valid():
+        form.save()
+        return redirect('tecnologias')
+    return render(request, 'portfolio/nova_tecnologia.html', {'form': form})
+
+def edita_tecnologia_view(request, tec_id):
+    tec = Tecnologia.objects.get(id=tec_id)
+    form = TecnologiaForm(request.POST or None, request.FILES, instance=tec)
+    if form.is_valid():
+        form.save()
+        return redirect('tecnologias')
+    return render(request, 'portfolio/edita_tecnologia.html', {'form': form, 'tec': tec})
+
+def apaga_tecnologia_view(request, tec_id):
+    Tecnologia.objects.get(id=tec_id).delete()
+    return redirect('tecnologias')

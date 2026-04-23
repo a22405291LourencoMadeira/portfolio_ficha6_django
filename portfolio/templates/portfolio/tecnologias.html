@@ -1,6 +1,7 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Tecnologias</h2>
+<a href="{% url 'nova_tecnologia' %}"><button>+ Nova Tecnologia</button></a>
 <section>
     {% for tec in tecnologias %}
     <article>
@@ -11,6 +12,8 @@
         <section>
             <p>{{ tec.descricao }}</p>
         </section>
+        <a href="{% url 'edita_tecnologia' tec.id %}"><button>Editar</button></a>
+        <a href="{% url 'apaga_tecnologia' tec.id %}"><button>Apagar</button></a>
     </article>
     {% endfor %}
 </section>

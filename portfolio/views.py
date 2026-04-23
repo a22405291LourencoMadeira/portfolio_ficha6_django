@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import UnidadeCurricular, Projeto, Tecnologia, TFC, Competencia, Formacao, Licenciatura
 from .forms import ProjetoForm, TecnologiaForm, CompetenciaForm, FormacaoForm
-from django.shortcuts import redirect
 
 def index_view(request):
     licenciatura = Licenciatura.objects.first()
@@ -11,25 +10,13 @@ def ucs_view(request):
     ucs = UnidadeCurricular.objects.select_related('licenciatura').prefetch_related('docentes').all()
     return render(request, 'portfolio/ucs.html', {'ucs': ucs})
 
-def projetos_view(request):
-    projetos = Projeto.objects.select_related('unidade_curricular').prefetch_related('tecnologias').all()
-    return render(request, 'portfolio/projetos.html', {'projetos': projetos})
-
-def tecnologias_view(request):
-    tecnologias = Tecnologia.objects.all()
-    return render(request, 'portfolio/tecnologias.html', {'tecnologias': tecnologias})
-
 def tfcs_view(request):
     tfcs = TFC.objects.prefetch_related('tecnologias').all()
     return render(request, 'portfolio/tfcs.html', {'tfcs': tfcs})
 
-def competencias_view(request):
-    competencias = Competencia.objects.prefetch_related('tecnologias', 'projetos').all()
-    return render(request, 'portfolio/competencias.html', {'competencias': competencias})
-
-def formacoes_view(request):
-    formacoes = Formacao.objects.all().order_by('data_inicio')
-    return render(request, 'portfolio/formacoes.html', {'formacoes': formacoes})
+def projetos_view(request):
+    projetos = Projeto.objects.select_related('unidade_curricular').prefetch_related('tecnologias').all()
+    return render(request, 'portfolio/projetos.html', {'projetos': projetos})
 
 def novo_projeto_view(request):
     form = ProjetoForm(request.POST or None, request.FILES)
@@ -50,6 +37,10 @@ def apaga_projeto_view(request, projeto_id):
     Projeto.objects.get(id=projeto_id).delete()
     return redirect('projetos')
 
+def tecnologias_view(request):
+    tecnologias = Tecnologia.objects.all()
+    return render(request, 'portfolio/tecnologias.html', {'tecnologias': tecnologias})
+
 def nova_tecnologia_view(request):
     form = TecnologiaForm(request.POST or None, request.FILES)
     if form.is_valid():
@@ -69,7 +60,11 @@ def apaga_tecnologia_view(request, tec_id):
     Tecnologia.objects.get(id=tec_id).delete()
     return redirect('tecnologias')
 
-    def nova_competencia_view(request):
+def competencias_view(request):
+    competencias = Competencia.objects.prefetch_related('tecnologias', 'projetos').all()
+    return render(request, 'portfolio/competencias.html', {'competencias': competencias})
+
+def nova_competencia_view(request):
     form = CompetenciaForm(request.POST or None)
     if form.is_valid():
         form.save()
@@ -88,7 +83,11 @@ def apaga_competencia_view(request, comp_id):
     Competencia.objects.get(id=comp_id).delete()
     return redirect('competencias')
 
-    def nova_formacao_view(request):
+def formacoes_view(request):
+    formacoes = Formacao.objects.all().order_by('data_inicio')
+    return render(request, 'portfolio/formacoes.html', {'formacoes': formacoes})
+
+def nova_formacao_view(request):
     form = FormacaoForm(request.POST or None)
     if form.is_valid():
         form.save()

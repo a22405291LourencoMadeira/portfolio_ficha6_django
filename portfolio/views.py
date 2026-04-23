@@ -87,3 +87,22 @@ def edita_competencia_view(request, comp_id):
 def apaga_competencia_view(request, comp_id):
     Competencia.objects.get(id=comp_id).delete()
     return redirect('competencias')
+
+    def nova_formacao_view(request):
+    form = FormacaoForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('formacoes')
+    return render(request, 'portfolio/nova_formacao.html', {'form': form})
+
+def edita_formacao_view(request, formacao_id):
+    formacao = Formacao.objects.get(id=formacao_id)
+    form = FormacaoForm(request.POST or None, instance=formacao)
+    if form.is_valid():
+        form.save()
+        return redirect('formacoes')
+    return render(request, 'portfolio/edita_formacao.html', {'form': form, 'formacao': formacao})
+
+def apaga_formacao_view(request, formacao_id):
+    Formacao.objects.get(id=formacao_id).delete()
+    return redirect('formacoes')

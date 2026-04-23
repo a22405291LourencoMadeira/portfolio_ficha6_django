@@ -9,4 +9,7 @@ urlpatterns = [
     path('tfcs/', views.tfcs_view, name='tfcs'),
     path('competencias/', views.competencias_view, name='competencias'),
     path('formacoes/', views.formacoes_view, name='formacoes'),
+    path('projetos/novo/', views.novo_projeto_view, name='novo_projeto'),
+path('projetos/<int:projeto_id>/edita/', views.edita_projeto_view, name='edita_projeto'),
+path('projetos/<int:projeto_id>/apaga/', views.apaga_projeto_view, name='apaga_projeto'),
 ]

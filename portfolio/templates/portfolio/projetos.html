@@ -1,6 +1,7 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Projetos</h2>
+<a href="{% url 'novo_projeto' %}"><button>+ Novo Projeto</button></a>
 <section>
     {% for projeto in projetos %}
     <article>
@@ -16,6 +17,8 @@
                 {% endfor %}
             </ul>
         </section>
+        <a href="{% url 'edita_projeto' projeto.id %}"><button>Editar</button></a>
+        <a href="{% url 'apaga_projeto' projeto.id %}"><button>Apagar</button></a>
     </article>
     {% endfor %}
 </section>

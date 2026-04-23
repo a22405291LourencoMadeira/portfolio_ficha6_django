@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import UnidadeCurricular, Projeto, Tecnologia, TFC, Competencia, Formacao, Licenciatura
+from .forms import ProjetoForm, TecnologiaForm, CompetenciaForm, FormacaoForm
+from django.shortcuts import redirect
 
 def index_view(request):
     licenciatura = Licenciatura.objects.first()
@@ -28,3 +30,22 @@ def competencias_view(request):
 def formacoes_view(request):
     formacoes = Formacao.objects.all().order_by('data_inicio')
     return render(request, 'portfolio/formacoes.html', {'formacoes': formacoes})
+
+def novo_projeto_view(request):
+    form = ProjetoForm(request.POST or None, request.FILES)
+    if form.is_valid():
+        form.save()
+        return redirect('projetos')
+    return render(request, 'portfolio/novo_projeto.html', {'form': form})
+
+def edita_projeto_view(request, projeto_id):
+    projeto = Projeto.objects.get(id=projeto_id)
+    form = ProjetoForm(request.POST or None, request.FILES, instance=projeto)
+    if form.is_valid():
+        form.save()
+        return redirect('projetos')
+    return render(request, 'portfolio/edita_projeto.html', {'form': form, 'projeto': projeto})
+
+def apaga_projeto_view(request, projeto_id):
+    Projeto.objects.get(id=projeto_id).delete()
+    return redirect('projetos')

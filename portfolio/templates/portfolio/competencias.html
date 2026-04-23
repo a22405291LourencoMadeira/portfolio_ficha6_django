@@ -1,6 +1,7 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Competências</h2>
+<a href="{% url 'nova_competencia' %}"><button>+ Nova Competência</button></a>
 <section>
     {% for comp in competencias %}
     <article>
@@ -16,6 +17,8 @@
                 {% endfor %}
             </ul>
         </section>
+        <a href="{% url 'edita_competencia' comp.id %}"><button>Editar</button></a>
+        <a href="{% url 'apaga_competencia' comp.id %}"><button>Apagar</button></a>
     </article>
     {% endfor %}
 </section>

@@ -1,0 +1,9 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<h2>Editar Competência: {{ comp.nome }}</h2>
+<form action="{% url 'edita_competencia' comp.id %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Guardar">
+</form>
+{% endblock %}

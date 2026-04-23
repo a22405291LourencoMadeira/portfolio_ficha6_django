@@ -68,3 +68,22 @@ def edita_tecnologia_view(request, tec_id):
 def apaga_tecnologia_view(request, tec_id):
     Tecnologia.objects.get(id=tec_id).delete()
     return redirect('tecnologias')
+
+    def nova_competencia_view(request):
+    form = CompetenciaForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('competencias')
+    return render(request, 'portfolio/nova_competencia.html', {'form': form})
+
+def edita_competencia_view(request, comp_id):
+    comp = Competencia.objects.get(id=comp_id)
+    form = CompetenciaForm(request.POST or None, instance=comp)
+    if form.is_valid():
+        form.save()
+        return redirect('competencias')
+    return render(request, 'portfolio/edita_competencia.html', {'form': form, 'comp': comp})
+
+def apaga_competencia_view(request, comp_id):
+    Competencia.objects.get(id=comp_id).delete()
+    return redirect('competencias')

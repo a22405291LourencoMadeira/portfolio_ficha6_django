@@ -15,4 +15,7 @@ path('projetos/<int:projeto_id>/apaga/', views.apaga_projeto_view, name='apaga_p
 path('tecnologias/nova/', views.nova_tecnologia_view, name='nova_tecnologia'),
 path('tecnologias/<int:tec_id>/edita/', views.edita_tecnologia_view, name='edita_tecnologia'),
 path('tecnologias/<int:tec_id>/apaga/', views.apaga_tecnologia_view, name='apaga_tecnologia'),
+path('competencias/nova/', views.nova_competencia_view, name='nova_competencia'),
+path('competencias/<int:comp_id>/edita/', views.edita_competencia_view, name='edita_competencia'),
+path('competencias/<int:comp_id>/apaga/', views.apaga_competencia_view, name='apaga_competencia'),
 ]

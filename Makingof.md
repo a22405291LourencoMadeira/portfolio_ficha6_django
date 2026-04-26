@@ -174,3 +174,48 @@ Justificação: O enunciado pede explicitamente que o uso de IA seja documentado
 
 ---
 
+## Ficha 7 e 8 — Views, Templates e Formulários CRUD
+
+### Erros e Correções
+
+| # | Erro | Correção |
+|---|---|---|
+| 5 | O `views.py` tinha funções com indentação errada e duplicadas ao adicionar o CRUD | Substituí o ficheiro completo por uma versão limpa e correta |
+| 6 | O servidor não arrancava com `IndentationError` na linha 73 | O erro era causado por uma função colada com espaços extra antes do `def` |
+
+---
+
+### Dificuldades Encontradas
+
+- Perceber a diferença entre `request.POST` e `request.FILES` — aprendi que `request.FILES` é necessário sempre que o formulário envia imagens ou ficheiros
+- Manter o `urls.py` organizado com muitas rotas CRUD para vários modelos
+- Ao adicionar código por partes ao `views.py`, introduzi erros de indentação sem reparar
+
+---
+
+### O que Considerei Importante
+
+- O padrão CRUD é sempre o mesmo: view → template → url. Depois de perceber o padrão para Projetos, os restantes (Tecnologias, Competências, Formações) foram muito mais rápidos
+- O `{% csrf_token %}` é obrigatório em todos os formulários Django — protege contra ataques
+- O `form.as_p` renderiza automaticamente todos os campos do formulário sem precisar de os escrever um a um
+- O `redirect()` após guardar evita que ao recarregar a página o formulário seja submetido novamente
+
+---
+
+### O que Gostei e o que Não Gostei
+
+- **Gostei:** Da forma como o Django gera automaticamente os formulários a partir dos modelos com `ModelForm` — poupa muito trabalho
+- **Gostei:** Da herança de templates com `{% extends %}` — escrever o `base.html` uma vez e reutilizar em todas as páginas é muito eficiente
+- **Não gostei:** De ter de criar tantos ficheiros HTML semelhantes (novo, edita) para cada modelo — parece repetitivo
+
+---
+
+### Como o Django se Mostra Vantajoso
+
+O Django mostra-se muito vantajoso na forma como abstrai operações complexas. Com poucas linhas de código consegui criar formulários completos ligados à base de dados, com validação automática. Numa aplicação sem framework, isto exigiria muito mais código manual.
+
+---
+
+### Uso de IA nesta fase
+
+Usei o Claude para me guiar passo a passo na criação das views, templates e urls do CRUD, sem pedir o código. O erro de indentação no `views.py` foi identificado e corrigido com a ajuda do Claude. Todas as decisões de estrutura foram minhas.

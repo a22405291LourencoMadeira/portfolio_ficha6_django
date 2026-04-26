@@ -33,6 +33,19 @@ class UnidadeCurricular(models.Model):
     def __str__(self):
         return self.nome
 
+class TipoTecnologia(models.Model):
+    TIPOS = [
+        ('frontend', 'Frontend'),
+        ('backend', 'Backend'),
+        ('base_dados', 'Base de Dados'),
+        ('storage', 'Storage'),
+        ('outro', 'Outro'),
+    ]
+    nome = models.CharField(max_length=50, choices=TIPOS)
+
+    def __str__(self):
+        return self.nome        
+
 
 class Tecnologia(models.Model):
     CATEGORIAS = [
@@ -47,7 +60,7 @@ class Tecnologia(models.Model):
     logo = models.ImageField(upload_to='tecnologias/', blank=True, null=True)
     url_website = models.URLField()
     nivel_interesse = models.IntegerField()  # 1 a 5
-    categoria = models.CharField(max_length=50, choices=CATEGORIAS)
+    tipo = models.ForeignKey(TipoTecnologia, on_delete=models.SET_NULL, null=True, blank=True, related_name='tecnologias')
 
     def __str__(self):
         return self.nome

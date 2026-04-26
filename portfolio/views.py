@@ -111,3 +111,8 @@ def sobre_view(request):
     from .models import TipoTecnologia
     tipos = TipoTecnologia.objects.prefetch_related('tecnologias').all()
     return render(request, 'portfolio/sobre.html', {'tipos': tipos})
+
+def makingof_view(request):
+    from .models import MakingOf
+    makingofs = MakingOf.objects.all().order_by('data')
+    return render(request, 'portfolio/makingof.html', {'makingofs': makingofs})

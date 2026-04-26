@@ -1,0 +1,35 @@
+{% extends "portfolio/base.html" %}
+{% load markdownify %}
+
+{% block content %}
+<h2>Making Of</h2>
+
+<section>
+    {% for entry in makingofs %}
+    <article>
+        <header>
+            <h3>{{ entry.titulo }}</h3>
+            <p>{{ entry.data }} — {{ entry.entidade_relacionada }}</p>
+        </header>
+        <section>
+            {{ entry.descricao|markdownify }}
+            {% if entry.decisoes %}
+            <h4>Decisões</h4>
+            {{ entry.decisoes|markdownify }}
+            {% endif %}
+            {% if entry.erros_correcoes %}
+            <h4>Erros e Correções</h4>
+            {{ entry.erros_correcoes|markdownify }}
+            {% endif %}
+            {% if entry.uso_ia %}
+            <h4>Uso de IA</h4>
+            {{ entry.uso_ia|markdownify }}
+            {% endif %}
+            {% if entry.fotografia %}
+            <img src="{{ entry.fotografia.url }}" alt="Fotografia {{ entry.titulo }}" style="max-width:100%">
+            {% endif %}
+        </section>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

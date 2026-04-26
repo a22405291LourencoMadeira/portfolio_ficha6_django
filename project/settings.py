@@ -31,16 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.staticfiles",
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
     'portfolio',
     'escola',
+    'markdownify.apps.MarkdownifyConfig', 
 ]
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -124,3 +124,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+MARKDOWNIFY = {
+   "default": {
+      "WHITELIST_TAGS": [
+        'a', 'abbr', 'acronym',
+        'strong', 'b',
+        'blockquote', 'em', 'i',
+        'ul', 'li', 'ol',
+        'p',
+        'h1', 'h2', 'h3', 'h4',
+      ]
+   }
+}

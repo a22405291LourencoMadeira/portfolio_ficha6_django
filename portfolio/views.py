@@ -105,3 +105,9 @@ def edita_formacao_view(request, formacao_id):
 def apaga_formacao_view(request, formacao_id):
     Formacao.objects.get(id=formacao_id).delete()
     return redirect('formacoes')
+
+
+def sobre_view(request):
+    from .models import TipoTecnologia
+    tipos = TipoTecnologia.objects.prefetch_related('tecnologias').all()
+    return render(request, 'portfolio/sobre.html', {'tipos': tipos})

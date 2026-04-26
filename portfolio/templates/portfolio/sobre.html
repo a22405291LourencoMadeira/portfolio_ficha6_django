@@ -1,0 +1,157 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+
+<h2>Sobre esta Aplicação</h2>
+
+<!-- 1. ARQUITETURA MVT -->
+<article>
+    <header>
+        <h3>1. Arquitetura MVT do Django</h3>
+    </header>
+    <section>
+        <p>
+            O Django segue o padrão <strong>MVT (Model, View, Template)</strong>:
+        </p>
+        <ul>
+            <li><strong>Model</strong> — define a estrutura dos dados e comunica com a base de dados através do ORM.</li>
+            <li><strong>View</strong> — recebe os pedidos HTTP, consulta os modelos e devolve uma resposta (normalmente um template renderizado).</li>
+            <li><strong>Template</strong> — ficheiro HTML que apresenta os dados ao utilizador.</li>
+        </ul>
+        <p><strong>Fluxo de informação:</strong> O browser faz um pedido → o Django verifica as URLs → chama a View correspondente → a View consulta o Model → passa os dados ao Template → devolve o HTML ao browser.</p>
+
+        <h4>Desenho da Arquitetura (feito em papel)</h4>
+        <img src="{{ MEDIA_URL }}makingof/Captura de ecrã 2026-04-07 174115.png" alt="Diagrama MVT em papel">
+
+        <h4>Vídeo Tutorial</h4>
+        <iframe width="560" height="315" src="" title="Video tutorial" allowfullscreen></iframe>
+        <p><em>(vídeo tutorial a adicionar)</em></p>
+    </section>
+</article>
+
+<!-- 2. MODELAÇÃO -->
+<article>
+    <header>
+        <h3>2. Modelação</h3>
+    </header>
+    <section>
+        <h4>Diagrama Entidade-Relação</h4>
+        <img src="{{ MEDIA_URL }}makingof/Captura de ecrã 2026-04-07 174115.png" alt="DER em papel">
+
+        <h4>Modelos em models.py</h4>
+        <pre><code>
+class Licenciatura(models.Model):
+    nome = models.CharField(max_length=200)
+    sigla = models.CharField(max_length=20)
+    descricao = models.TextField()
+    url = models.URLField()
+    duracao_anos = models.IntegerField()
+
+class Docente(models.Model):
+    nome = models.CharField(max_length=200)
+    url_pagina = models.URLField()
+    foto = models.ImageField(upload_to='docentes/', blank=True, null=True)
+
+class UnidadeCurricular(models.Model):
+    nome = models.CharField(max_length=200)
+    ano = models.IntegerField()
+    semestre = models.IntegerField()
+    descricao = models.TextField()
+    imagem = models.ImageField(upload_to='ucs/', blank=True, null=True)
+    ects = models.IntegerField()
+    licenciatura = models.ForeignKey(Licenciatura, on_delete=models.CASCADE)
+    docentes = models.ManyToManyField(Docente, blank=True)
+
+class TipoTecnologia(models.Model):
+    nome = models.CharField(max_length=50)
+
+class Tecnologia(models.Model):
+    nome = models.CharField(max_length=200)
+    descricao = models.TextField()
+    logo = models.ImageField(upload_to='tecnologias/', blank=True, null=True)
+    url_website = models.URLField()
+    nivel_interesse = models.IntegerField()
+    tipo = models.ForeignKey(TipoTecnologia, on_delete=models.SET_NULL, null=True)
+
+class Projeto(models.Model):
+    nome = models.CharField(max_length=200)
+    descricao = models.TextField()
+    url_github = models.URLField()
+    ano = models.IntegerField()
+    unidade_curricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
+    tecnologias = models.ManyToManyField(Tecnologia, blank=True)
+        </code></pre>
+    </section>
+</article>
+
+<!-- 3. TECNOLOGIAS -->
+<article>
+    <header>
+        <h3>3. Tecnologias Utilizadas</h3>
+    </header>
+    <section>
+        {% for tipo in tipos %}
+        <h4>{{ tipo.nome }}</h4>
+        <ul>
+            {% for tec in tipo.tecnologias.all %}
+            <li>
+                <strong>{{ tec.nome }}</strong> — {{ tec.descricao }}
+            </li>
+            {% empty %}
+            <li>Sem tecnologias neste tipo.</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </section>
+</article>
+
+<!-- 4. ESTRUTURA DE NAVEGAÇÃO -->
+<article>
+    <header>
+        <h3>4. Estrutura de Navegação</h3>
+    </header>
+    <section>
+        <p>Desenho do mapa de navegação da aplicação (feito em papel):</p>
+        <img src="{{ MEDIA_URL }}makingof/Captura de ecrã 2026-04-07 174115.png" alt="Mapa de navegação">
+        <pre>
+/portfolio/
+├── ucs/
+├── projetos/
+│   ├── novo/
+│   └── id/edita/ e id/apaga/
+├── tecnologias/
+│   ├── nova/
+│   └── id/edita/ e id/apaga/
+├── competencias/
+├── formacoes/
+├── tfcs/
+└── sobre/
+        </pre>
+    </section>
+</article>
+
+<!-- 5. REPOSITÓRIO GITHUB -->
+<article>
+    <header>
+        <h3>5. Repositório GitHub</h3>
+    </header>
+    <section>
+        <p>
+            O código desta aplicação está disponível em:
+            <a href="https://github.com/a22405291LourencoMadeira/portfolio_ficha6_django" target="_blank">
+                github.com/a22405291LourencoMadeira/portfolio_ficha6_django
+            </a>
+        </p>
+        <p>
+            O Git e o GitHub foram usados ao longo de todo o desenvolvimento para guardar e versionar o código.
+            Cada funcionalidade foi commitada separadamente com uma mensagem descritiva, o que permite rastrear
+            a evolução do projeto e reverter alterações se necessário.
+        </p>
+        <p>
+            <strong>Vantagens:</strong> controlo de versões, histórico de alterações, possibilidade de trabalhar
+            em equipa, e integração com o GitHub Codespaces que permitiu desenvolver diretamente no browser
+            sem instalar nada localmente.
+        </p>
+    </section>
+</article>
+
+{% endblock %}

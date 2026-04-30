@@ -1,19 +1,25 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
 <h2>Tecnologias</h2>
+
+{% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
 <a href="{% url 'nova_tecnologia' %}"><button>+ Nova Tecnologia</button></a>
+{% endif %}
+
 <section>
     {% for tec in tecnologias %}
     <article>
         <header>
             <h3>{{ tec.nome }}</h3>
-            <p>{{ tec.categoria }} — Interesse: {{ tec.nivel_interesse }}/5</p>
+            <p>{{ tec.tipo }} — Interesse: {{ tec.nivel_interesse }}/5</p>
         </header>
         <section>
             <p>{{ tec.descricao }}</p>
         </section>
+        {% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
         <a href="{% url 'edita_tecnologia' tec.id %}"><button>Editar</button></a>
         <a href="{% url 'apaga_tecnologia' tec.id %}"><button>Apagar</button></a>
+        {% endif %}
     </article>
     {% endfor %}
 </section>

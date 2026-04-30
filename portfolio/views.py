@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import UnidadeCurricular, Projeto, Tecnologia, TFC, Competencia, Formacao, Licenciatura
 from .forms import ProjetoForm, TecnologiaForm, CompetenciaForm, FormacaoForm
 
+
 def index_view(request):
     licenciatura = Licenciatura.objects.first()
     return render(request, 'portfolio/index.html', {'licenciatura': licenciatura})

@@ -139,3 +139,5 @@ MARKDOWNIFY = {
       ]
    }
 }
+
+LOGIN_URL = '/accounts/login/'

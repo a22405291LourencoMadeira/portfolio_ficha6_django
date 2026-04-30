@@ -1,8 +1,9 @@
 {% extends "portfolio/base.html" %}
+{% load portfolio_extras %}
 {% block content %}
 <h2>Tecnologias</h2>
 
-{% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+{% if request.user|is_gestor %}
 <a href="{% url 'nova_tecnologia' %}"><button>+ Nova Tecnologia</button></a>
 {% endif %}
 
@@ -16,7 +17,7 @@
         <section>
             <p>{{ tec.descricao }}</p>
         </section>
-        {% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+        {% if request.user|is_gestor %}
         <a href="{% url 'edita_tecnologia' tec.id %}"><button>Editar</button></a>
         <a href="{% url 'apaga_tecnologia' tec.id %}"><button>Apagar</button></a>
         {% endif %}

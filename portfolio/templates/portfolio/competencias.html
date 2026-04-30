@@ -1,8 +1,9 @@
 {% extends "portfolio/base.html" %}
+{% load portfolio_extras %}
 {% block content %}
 <h2>Competências</h2>
 
-{% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+{% if request.user|is_gestor %}
 <a href="{% url 'nova_competencia' %}"><button>+ Nova Competência</button></a>
 {% endif %}
 
@@ -21,7 +22,7 @@
                 {% endfor %}
             </ul>
         </section>
-        {% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+        {% if request.user|is_gestor %}
         <a href="{% url 'edita_competencia' comp.id %}"><button>Editar</button></a>
         <a href="{% url 'apaga_competencia' comp.id %}"><button>Apagar</button></a>
         {% endif %}

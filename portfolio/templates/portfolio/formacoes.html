@@ -1,8 +1,9 @@
 {% extends "portfolio/base.html" %}
+{% load portfolio_extras %}
 {% block content %}
 <h2>Formações</h2>
 
-{% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+{% if request.user|is_gestor %}
 <a href="{% url 'nova_formacao' %}"><button>+ Nova Formação</button></a>
 {% endif %}
 
@@ -16,7 +17,7 @@
         <section>
             <p>{{ formacao.descricao }}</p>
         </section>
-        {% if request.user.is_authenticated and request.user.groups.filter(name='gestor-portfolio').exists %}
+        {% if request.user|is_gestor %}
         <a href="{% url 'edita_formacao' formacao.id %}"><button>Editar</button></a>
         <a href="{% url 'apaga_formacao' formacao.id %}"><button>Apagar</button></a>
         {% endif %}

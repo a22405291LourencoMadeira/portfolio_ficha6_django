@@ -8,6 +8,7 @@ urlpatterns = [
     path("escola/", include("escola.urls")),
     path("portfolio/", include("portfolio.urls")),
     path("", include("escola.urls")),
+    path('accounts/', include('accounts.urls')),
 ]
 
 if settings.DEBUG:

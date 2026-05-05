@@ -22,8 +22,11 @@ def logout_view(request):
     return redirect('login')
 
 def registo_view(request):
+    from django.contrib.auth.models import Group
     form = RegistoForm(request.POST or None)
     if form.is_valid():
-        form.save()
+        user = form.save()
+        grupo = Group.objects.get(name='autores')
+        user.groups.add(grupo)
         return redirect('login')
     return render(request, 'accounts/registo.html', {'form': form})

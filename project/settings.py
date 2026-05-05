@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'escola',
     'markdownify.apps.MarkdownifyConfig', 
     'accounts',
+    'artigos',
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

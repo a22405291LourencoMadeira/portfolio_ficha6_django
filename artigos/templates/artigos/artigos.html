@@ -1,8 +1,9 @@
 {% extends "portfolio/base.html" %}
+{% load portfolio_extras %}
 {% block content %}
 <h2>Artigos</h2>
 
-{% if request.user.groups.filter(name='autores').exists %}
+{% if request.user|is_autor %}
 <a href="{% url 'novo_artigo' %}"><button>+ Novo Artigo</button></a>
 {% endif %}
 

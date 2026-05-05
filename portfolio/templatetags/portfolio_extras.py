@@ -5,3 +5,8 @@ register = template.Library()
 @register.filter
 def is_gestor(user):
     return user.is_authenticated and user.groups.filter(name='gestor-portfolio').exists()
+
+
+@register.filter
+def is_autor(user):
+    return user.is_authenticated and user.groups.filter(name='autores').exists()

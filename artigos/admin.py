@@ -1,3 +1,15 @@
 from django.contrib import admin
+from .models import Artigo, Like, Comentario
 
-# Register your models here.
+@admin.register(Artigo)
+class ArtigoAdmin(admin.ModelAdmin):
+    list_display = ['titulo', 'autor', 'data_criacao']
+    list_filter = ['autor', 'data_criacao']
+    search_fields = ['titulo', 'texto']
+
+@admin.register(Comentario)
+class ComentarioAdmin(admin.ModelAdmin):
+    list_display = ['artigo', 'autor', 'data']
+    list_filter = ['autor']
+
+admin.site.register(Like)

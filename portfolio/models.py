@@ -82,10 +82,10 @@ class Projeto(models.Model):
 
 
 class TFC(models.Model):
-    titulo = models.CharField(max_length=500)
-    autor = models.CharField(max_length=200)
-    orientador = models.CharField(max_length=200)
-    curso = models.CharField(max_length=200)
+    titulo = models.TextField()
+    autor = models.TextField()
+    orientador = models.TextField()
+    curso = models.TextField()
     ano = models.IntegerField()
     interesse = models.BooleanField(default=False)
     url = models.URLField(blank=True, null=True)

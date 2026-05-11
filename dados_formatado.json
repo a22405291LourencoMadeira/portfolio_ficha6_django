@@ -1,0 +1,2180 @@
+[
+    {
+        "model": "portfolio.licenciatura",
+        "pk": 1,
+        "fields": {
+            "nome": "Licenciatura em Engenharia Inform\u00e1tica",
+            "sigla": "LEI",
+            "descricao": "Aceder a um estatuto profissional com elevado potencial de mercado, atrav\u00e9s de um perfil reconhecido com fortes compet\u00eancias tecnol\u00f3gicas e humanas, garantindo um elevado grau de empregabilidade e a possibilidade de prosseguir os estudos de 2\u00ba ciclo com excelentes perspetivas de sucesso.\nUsufruir de um ensino de excel\u00eancia assente num corpo docente de qualidade, integrando especialistas e doutorados com elevado potencial pedag\u00f3gico e atividade comprovada em investiga\u00e7\u00e3o.\r\n\nTer acesso a v\u00e1rios est\u00e1gios e forma\u00e7\u00f5es empresariais ao longo do curso, no \u00e2mbito das diferentes parcerias desenvolvidas pelo DEISI, potenciando a empregabilidade assim como um n\u00edvel de qualifica\u00e7\u00e3o elevado antes da conclus\u00e3o do curso.\nPoder efetuar o Trabalho Final de Curso inserido em projetos inovadores, pelo facto de uma maioria do seu corpo docente estar agregado aos Centros de Investiga\u00e7\u00e3o da ECATI ou \u00e0s empresas parceiras do DEISI.\nTirar partido do Centro de Incuba\u00e7\u00e3o de Empresas PLAY, que garante apoio \u00e0s ideias dos jovens alunos mais empreendedores, potenciando a sua transforma\u00e7\u00e3o em empresas de sucesso.\nCurso reconhecido pela Ordem dos Engenheiros T\u00e9cnicos.",
+            "url": "https://www.ulusofona.pt/lisboa/licenciaturas/engenharia-informatica",
+            "duracao_anos": 3
+        }
+    },
+    {
+        "model": "portfolio.docente",
+        "pk": 1,
+        "fields": {
+            "nome": "Pedro Alves",
+            "url_pagina": "https://www.ulusofona.pt/docentes/pedro-hugo-de-queiros-alves-4997",
+            "foto": ""
+        }
+    },
+    {
+        "model": "portfolio.docente",
+        "pk": 2,
+        "fields": {
+            "nome": "Lucio Studer Ferreira",
+            "url_pagina": "https://www.ulusofona.pt/docentes/lucio-miguel-studer-ferreira-6069",
+            "foto": ""
+        }
+    },
+    {
+        "model": "portfolio.docente",
+        "pk": 3,
+        "fields": {
+            "nome": "Berend Willem Martijn Kuipers",
+            "url_pagina": "https://www.ulusofona.pt/docentes/berend-willem-martijn-kuipers-8094",
+            "foto": ""
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 2,
+        "fields": {
+            "nome": "Fundamentos de F\u00edsica",
+            "ano": 1,
+            "semestre": 1,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 3,
+        "fields": {
+            "nome": "Fundamentos de Programa\u00e7\u00e3o",
+            "ano": 1,
+            "semestre": 1,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 4,
+        "fields": {
+            "nome": "Matem\u00e1tica I",
+            "ano": 1,
+            "semestre": 1,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 5,
+        "fields": {
+            "nome": "Matem\u00e1tica Discreta",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 6,
+        "fields": {
+            "nome": "Sistemas Digitais",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 7,
+        "fields": {
+            "nome": "\u00c1lgebra Linear",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 8,
+        "fields": {
+            "nome": "Algoritmia e Estruturas de Dados",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 9,
+        "fields": {
+            "nome": "Arquitetura de Computadores",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 10,
+        "fields": {
+            "nome": "Compet\u00eancias Comportamentais",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 4,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 11,
+        "fields": {
+            "nome": "Linguagens de Programa\u00e7\u00e3o I",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 12,
+        "fields": {
+            "nome": "Matem\u00e1tica II",
+            "ano": 1,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 13,
+        "fields": {
+            "nome": "Arquiteturas Avan\u00e7adas de Computadores",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 14,
+        "fields": {
+            "nome": "Bases de Dados",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 15,
+        "fields": {
+            "nome": "Desenvolvimento de Interfaces Web",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 3,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 16,
+        "fields": {
+            "nome": "Linguagens de Programa\u00e7\u00e3o II",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 17,
+        "fields": {
+            "nome": "Processamento de Imagem",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 4,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 18,
+        "fields": {
+            "nome": "Sistemas Operativos",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 19,
+        "fields": {
+            "nome": "Engenharia de Requisitos e Testes",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 20,
+        "fields": {
+            "nome": "Probabilidades e Estat\u00edstica",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 21,
+        "fields": {
+            "nome": "Programa\u00e7\u00e3o Web",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 22,
+        "fields": {
+            "nome": "Redes de Computadores",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 23,
+        "fields": {
+            "nome": "Sistemas de Suporte \u00e0 Decis\u00e3o",
+            "ano": 2,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 6,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 24,
+        "fields": {
+            "nome": "Trabalho Final de Curso",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 20,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 25,
+        "fields": {
+            "nome": "Computa\u00e7\u00e3o Distribu\u00edda",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 26,
+        "fields": {
+            "nome": "Data Science",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 27,
+        "fields": {
+            "nome": "Engenharia de Software",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 28,
+        "fields": {
+            "nome": "Intera\u00e7\u00e3o Humano-M\u00e1quina",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 29,
+        "fields": {
+            "nome": "Computa\u00e7\u00e3o M\u00f3vel",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 30,
+        "fields": {
+            "nome": "Intelig\u00eancia Artificial",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 31,
+        "fields": {
+            "nome": "Seguran\u00e7a Inform\u00e1tica",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.unidadecurricular",
+        "pk": 32,
+        "fields": {
+            "nome": "Sistemas de Informa\u00e7\u00e3o na Nuvem",
+            "ano": 3,
+            "semestre": 2,
+            "descricao": "",
+            "imagem": "",
+            "ects": 5,
+            "licenciatura": 1,
+            "docentes": []
+        }
+    },
+    {
+        "model": "portfolio.tipotecnologia",
+        "pk": 1,
+        "fields": {
+            "nome": "frontend"
+        }
+    },
+    {
+        "model": "portfolio.tipotecnologia",
+        "pk": 2,
+        "fields": {
+            "nome": "backend"
+        }
+    },
+    {
+        "model": "portfolio.tipotecnologia",
+        "pk": 3,
+        "fields": {
+            "nome": "base_dados"
+        }
+    },
+    {
+        "model": "portfolio.tipotecnologia",
+        "pk": 4,
+        "fields": {
+            "nome": "storage"
+        }
+    },
+    {
+        "model": "portfolio.tipotecnologia",
+        "pk": 5,
+        "fields": {
+            "nome": "outro"
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 1,
+        "fields": {
+            "nome": "Python",
+            "descricao": "Linguagem de programa\u00e7\u00e3o de alto n\u00edvel, vers\u00e1til e f\u00e1cil de aprender. Utilizada em desenvolvimento web, ci\u00eancia de dados e automa\u00e7\u00e3o.",
+            "logo": "",
+            "url_website": "https://www.python.org",
+            "nivel_interesse": 5,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 2,
+        "fields": {
+            "nome": "Django",
+            "descricao": "Framework web em Python que segue o padr\u00e3o MVT. Permite criar aplica\u00e7\u00f5es web robustas de forma r\u00e1pida e estruturada.",
+            "logo": "",
+            "url_website": "https://www.djangoproject.com",
+            "nivel_interesse": 5,
+            "tipo": 2
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 3,
+        "fields": {
+            "nome": "HTML",
+            "descricao": "Linguagem de marca\u00e7\u00e3o usada para estruturar o conte\u00fado das p\u00e1ginas web. Define elementos como t\u00edtulos, par\u00e1grafos, listas e links.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_143229.png",
+            "url_website": "https://developer.mozilla.org/pt-PT/docs/Web/HTML",
+            "nivel_interesse": 4,
+            "tipo": 1
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 4,
+        "fields": {
+            "nome": "CSS",
+            "descricao": "Linguagem de estilos usada para definir o aspeto visual das p\u00e1ginas web. Permite controlar cores, tipografia, layout e anima\u00e7\u00f5es.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_143344.png",
+            "url_website": "https://developer.mozilla.org/pt-PT/docs/Web/CSS",
+            "nivel_interesse": 4,
+            "tipo": 1
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 5,
+        "fields": {
+            "nome": "Git",
+            "descricao": "Sistema de controlo de vers\u00f5es distribu\u00eddo. Permite registar o hist\u00f3rico de altera\u00e7\u00f5es do c\u00f3digo, criar ramos de desenvolvimento e reverter erros.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_143547.png",
+            "url_website": "https://git-scm.com",
+            "nivel_interesse": 5,
+            "tipo": 5
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 6,
+        "fields": {
+            "nome": "SQLite",
+            "descricao": "Base de dados relacional leve e integrada por defeito no Django. Ideal para desenvolvimento e projetos de pequena escala, sem necessidade de servidor separado.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_143709.png",
+            "url_website": "https://www.sqlite.org",
+            "nivel_interesse": 3,
+            "tipo": 3
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 7,
+        "fields": {
+            "nome": "GitHub",
+            "descricao": "Plataforma de alojamento de reposit\u00f3rios Git. Permite colaborar em projetos, fazer code review e usar o GitHub Codespaces para desenvolver diretamente no browser.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_143848.png",
+            "url_website": "https://github.com",
+            "nivel_interesse": 5,
+            "tipo": 5
+        }
+    },
+    {
+        "model": "portfolio.tecnologia",
+        "pk": 8,
+        "fields": {
+            "nome": "GitHub Codespaces",
+            "descricao": "Ambiente de desenvolvimento na cloud integrado no GitHub. Permite programar diretamente no browser sem instalar nada localmente, usando um VS Code online.",
+            "logo": "tecnologias/Captura_de_ecr\u00e3_2026-04-26_144016.png",
+            "url_website": "https://github.com/features/codespaces",
+            "nivel_interesse": 5,
+            "tipo": 5
+        }
+    },
+    {
+        "model": "portfolio.projeto",
+        "pk": 3,
+        "fields": {
+            "nome": "louren\u00e7o",
+            "descricao": "muito fixe",
+            "conceitos": "aaaa",
+            "imagem": "",
+            "video_demo": null,
+            "url_github": "https://github.com/a22405291LourencoMadeira/portfolio_ficha6_django/tree/main",
+            "ano": 2025,
+            "unidade_curricular": 14,
+            "tecnologias": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 1,
+        "fields": {
+            "titulo": "Assessing effectiveness of language models in Project Management Tasks",
+            "autor": "Alexandre Jose Silva Abdala Junior",
+            "orientador": "Jo\u00e3o Caldeira",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 2,
+        "fields": {
+            "titulo": "Comid: Identifica\u00e7\u00e3o de Comunidades Online",
+            "autor": "Thiago Henrique Dos Santos",
+            "orientador": "Manuel Marques Pita",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 3,
+        "fields": {
+            "titulo": "Cost Reduction and Optimization in Cloud Environments",
+            "autor": "Jo\u00e3o Pedro Matos",
+            "orientador": "Paulo Guedes, Pedro Perdig\u00e3o",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 4,
+        "fields": {
+            "titulo": "Energy Consumption Crawler",
+            "autor": "Gon\u00e7alo Cabeleira",
+            "orientador": "Jo\u00e3o Caldeira",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 5,
+        "fields": {
+            "titulo": "Evolu\u00e7\u00e3o dos Sistemas de Autentica\u00e7\u00e3o Forte: an\u00e1lise e implementa\u00e7\u00e3o",
+            "autor": "Jilson Almeida Benjamim",
+            "orientador": "Jos\u00e9 Rogado",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 6,
+        "fields": {
+            "titulo": "Identifica\u00e7\u00e3o e Dete\u00e7\u00e3o em Tempo Real de Amea\u00e7as de Phishing em Aplica\u00e7\u00f5es de Mensagens Instant\u00e2neas",
+            "autor": "Jo\u00e3o Tiago Dur\u00e3es",
+            "orientador": "Jo\u00e3o Craveiro",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 7,
+        "fields": {
+            "titulo": "Melhores Pr\u00e1ticas Na Transforma\u00e7\u00e3o Digital Das Pmes Portuguesas: Um Estudo De Caso Do Setor Do Turismo, Hotelaria E Restaura\u00e7\u00e3o No Munic\u00edpio Do Barreiro.",
+            "autor": "Valdemar Sebasti\u00e3o Buco",
+            "orientador": "Rui Ribeiro",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 8,
+        "fields": {
+            "titulo": "Ray Tracing and SSR: A Hybrid Approach",
+            "autor": "Leandro Br\u00e1s",
+            "orientador": "Diogo de Andrade, Nuno Fachada",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 9,
+        "fields": {
+            "titulo": "Telemedicina Segura e Escala\u0301vel \u2013 Uma Abordagem de Contentores e Microservic\u0327os",
+            "autor": "Ricardo Gon\u00e7alves",
+            "orientador": "Paulo Guedes, Wellington Oliveira",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 10,
+        "fields": {
+            "titulo": "6G: Impact analysis and new business models in the 5th Industrial Revolution",
+            "autor": "Gilson Da Silva Ferreira",
+            "orientador": "Rui Ribeiro",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 11,
+        "fields": {
+            "titulo": "Adaptive Detection and Characterization of Plume-Dominated Wildfires",
+            "autor": "Afonso Oliveira",
+            "orientador": "Jo\u00e3o P. Matos-Carvalho, Nuno Fachada",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 12,
+        "fields": {
+            "titulo": "Enterprise Rating for Information Systems",
+            "autor": "Mikael Saraiva",
+            "orientador": "Rui Ribeiro",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 13,
+        "fields": {
+            "titulo": "Fall Detection and Fall Prevention",
+            "autor": "Jorge Leiria Pires",
+            "orientador": "Slavi\u0161a Tomi\u0107, S\u00e9rgio Duarte",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 14,
+        "fields": {
+            "titulo": "Graph-based Environment Generation",
+            "autor": "Diogo De Andrade",
+            "orientador": "Nuno Maria Carvalho Pereira Fernandes Fachada",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 15,
+        "fields": {
+            "titulo": "IT security for an end user in an IoT structure",
+            "autor": "Silvana Chagas",
+            "orientador": "Nuno Ricardo Mateus Coelho",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 16,
+        "fields": {
+            "titulo": "LLM-Based Clustering of Text Documents",
+            "autor": "Alina Petukhova",
+            "orientador": "Jo\u00e3o P. Matos-Carvalho, Nuno Fachada",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 17,
+        "fields": {
+            "titulo": "Medical Image Segmentation for Edge Device Deployment Using Compression Techniques.",
+            "autor": "Preyesse Arquissand\u00e1s",
+            "orientador": "Jo\u00e3o P. Matos-Carvalho, S\u00e9rgio Duarte, Tiago Reis",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 18,
+        "fields": {
+            "titulo": "Patient-Centered Healthcare: A Framework for Analyzing Patient Feedback through Sentiment Analysis and Topic Modeling",
+            "autor": "Luis Os\u00f3rio",
+            "orientador": "Nuno Ricardo Mateus Coelho",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 19,
+        "fields": {
+            "titulo": "Simulation of Cyber Attacks in Industrial Control Systems Using Generative AI and Development of Anomaly Detection Mechanisms with Federated Learning",
+            "autor": "Veysel Alevcan",
+            "orientador": "Lu\u00eds Miguel Campos",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 20,
+        "fields": {
+            "titulo": "Simultaneous Wireless Information and Power Transfer",
+            "autor": "Vishalya Panchalinee Sooriarachchi",
+            "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara, Marko Beko",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 21,
+        "fields": {
+            "titulo": "Terrestrial-Underwater Wireless Communication Networks with Self-Energized UAVs Utilizing THz/VLC for Enhanced Connectivity",
+            "autor": "Hanojhan Rajahrajasingh",
+            "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara, Marko Beko",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 22,
+        "fields": {
+            "titulo": "The Role of Presence in Fostering Empathy in Virtual Environments",
+            "autor": "Maria Costa",
+            "orientador": "Micaela Fonseca, Phil Lopes",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 23,
+        "fields": {
+            "titulo": "Towards Autonomous and Trustworthy Vehicle Navigation in GNSS-denied Environments",
+            "autor": "Ricardo Serras Santos",
+            "orientador": "Jo\u00e3o P. Matos-Carvalho, Marko Beko, Slavi\u0161a Tomi\u0107",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 24,
+        "fields": {
+            "titulo": "Abordagens n\u00e3o supervisionadas para dete\u00e7\u00e3o de reviews falsas em plataformas de e-commerce",
+            "autor": "Nuno Santinhos",
+            "orientador": "Sofia Fernandes",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 25,
+        "fields": {
+            "titulo": "AdvenTour",
+            "autor": "Gon\u00e7alo Neves, Lucas Botelho",
+            "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 26,
+        "fields": {
+            "titulo": "Aplicativo para gest\u00e3o de volunt\u00e1rios e auxilio de associa\u00e7\u00f5es de animais",
+            "autor": "C\u00e1tia Coelho",
+            "orientador": "Bruno Cipriano, Rodrigo Correia",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 27,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o m\u00f3vel para recomenda\u00e7\u00e3o de carruagens de comboios e metros com base em informa\u00e7\u00e3o de ocupa\u00e7\u00e3o",
+            "autor": "Susana Wang",
+            "orientador": "Bruno Cipriano, Rodrigo Correia",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 28,
+        "fields": {
+            "titulo": "Auto Mecom Website ( Oficina de Repara\u00e7\u00e3o de Autom\u00f3veis )",
+            "autor": "Beatriz Neves",
+            "orientador": "Rui Santos",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 29,
+        "fields": {
+            "titulo": "Classifica\u00e7\u00e3o de Pacientes e Previs\u00e3o de Tempos de Espera para Centro Hospitalar atrav\u00e9s de modelos Machine Learning",
+            "autor": "Ana Toscano",
+            "orientador": "Iolanda Velho, Sofia Naique",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 30,
+        "fields": {
+            "titulo": "Compara\u00e7\u00e3o de Estrat\u00e9gias de Marketing Digital Baseadas em Redes Sociais para Pequenas e M\u00e9dias Empresas (PMEs)",
+            "autor": "Perla Lima",
+            "orientador": "Fernando Angelino",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 31,
+        "fields": {
+            "titulo": "Configurador Software Avi\u00f3nico  e gerador de c\u00f3digo fonte",
+            "autor": "Ricardo Costa Lopes",
+            "orientador": "Daniel Silveira",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 32,
+        "fields": {
+            "titulo": "Dashboard para Monitoriza\u00e7\u00e3o em Tempo Real da Produ\u00e7\u00e3o e Consumo de Energia no Campus",
+            "autor": "Francisco Lucas",
+            "orientador": "L\u00facio Studer, Martijn Kuipers",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 33,
+        "fields": {
+            "titulo": "Dete\u00e7\u00e3o de Micropl\u00e1sticos",
+            "autor": "Damien Naz\u00e1rio",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 34,
+        "fields": {
+            "titulo": "DigiDoc \u2013 app inteligente de gerenciamento de documentos",
+            "autor": "Bruno Ramos",
+            "orientador": "Daniel Silveira, Martijn Kuipers",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 35,
+        "fields": {
+            "titulo": "Disentanglement in multiparty conversation",
+            "autor": "Daniel Nascimento, Pedro Prata",
+            "orientador": "Bruno Saraiva, Zuil Pirola",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 36,
+        "fields": {
+            "titulo": "Ferramenta de Anota\u00e7\u00e3o",
+            "autor": "F\u00e1bio Lopes",
+            "orientador": "Bruno Saraiva, Zuil Pirola",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 37,
+        "fields": {
+            "titulo": "Gest\u00e3o de distribui\u00e7\u00e3o alimentar v2",
+            "autor": "Tiago Henrique Duarte Da Silva Jorge",
+            "orientador": "Lu\u00eds Gomes",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 38,
+        "fields": {
+            "titulo": "Interface Azure para ERP",
+            "autor": "Tiago Amaro",
+            "orientador": "Lu\u00eds Gomes",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 39,
+        "fields": {
+            "titulo": "Interface Azure para ERP",
+            "autor": "Tiago Amaro",
+            "orientador": "Lu\u00eds Gomes",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 40,
+        "fields": {
+            "titulo": "My Lessons : Gest\u00e3o Inteligente de Escolas",
+            "autor": "Francisco Sousa",
+            "orientador": "L\u00facio Studer, Martim Mour\u00e3o",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 41,
+        "fields": {
+            "titulo": "NicePandora",
+            "autor": "Francisco Chambel",
+            "orientador": "Daniel Silveira, Pedro Serra",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 42,
+        "fields": {
+            "titulo": "OP \u2013 Opening Doors",
+            "autor": "Guilherme Ribeiro",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 43,
+        "fields": {
+            "titulo": "Power Platform Digital Transformation",
+            "autor": "Ricardo Alexandre Gon\u00e7alves",
+            "orientador": "Rui Ribeiro",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 44,
+        "fields": {
+            "titulo": "Rede Social para a Comunidade Universitaria",
+            "autor": "Francisco Gomes, M\u00e1rio Valentino",
+            "orientador": "Rui Santos",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 45,
+        "fields": {
+            "titulo": "Segmenta\u00e7\u00e3o de inc\u00eandios florestais",
+            "autor": "Francisco Perp\u00e9tuo Alves",
+            "orientador": "Houda Harkat, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 46,
+        "fields": {
+            "titulo": "i-Inflation",
+            "autor": "Gon\u00e7alo Barata, Maria In\u00eas Silva",
+            "orientador": "Lu\u00eds Miguel Campos",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 47,
+        "fields": {
+            "titulo": "iEquus",
+            "autor": "Duarte Chen",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 48,
+        "fields": {
+            "titulo": "A GPT-Based Data Augmentation Approach for enhancing Argumentation Mining in Multi-party Dialogues",
+            "autor": "Luiza Vidal Copolillo Coelho",
+            "orientador": "Manuel Marques Pita, Zuil Pirola",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 49,
+        "fields": {
+            "titulo": "AWS Resource Management: A Private Collaborative Management Portal",
+            "autor": "Alexandre Marques, Ant\u00f3nio Antunes",
+            "orientador": "Jo\u00e3o Caldeira, Lu\u00eds Gomes",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 50,
+        "fields": {
+            "titulo": "Adventour",
+            "autor": "Gon\u00e7alo Dos Santos Neves, Lucas Miguel Costa Botelho",
+            "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 51,
+        "fields": {
+            "titulo": "Analysis of Joint Purchasing Patterns for Recommendation Systems in an Online Bookstore",
+            "autor": "Joana Okica",
+            "orientador": "Sofia Fernandes",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 52,
+        "fields": {
+            "titulo": "An\u00e1lise de padr\u00f5es de compra conjunta para sistemas de recomenda\u00e7\u00e3o numa online gift store",
+            "autor": "Jo\u00e3o Serralha, Henrique Aleixo",
+            "orientador": "Sofia Fernandes",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 53,
+        "fields": {
+            "titulo": "An\u00e1lise de reviews em plataformas de e-commerce",
+            "autor": "Nuno Mateus Santinhos",
+            "orientador": "Martim Mour\u00e3o, Sofia Fernades",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 54,
+        "fields": {
+            "titulo": "Aplicar Intelig\u00eancia Artificial ao movimento da bolsa",
+            "autor": "Francisco Miguel Calado Pinto",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 55,
+        "fields": {
+            "titulo": "Aplicativo de gerenciamento e extra\u00e7\u00e3o de dados de documentos para preenchimento autom\u00e1tico de formul\u00e1rios",
+            "autor": "Tom\u00e1s Moreira Pinto Louren\u00e7o, Bruno Dias De Pina Ramos",
+            "orientador": "Daniel Silveira, Martijn Kuipers",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 56,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o Web para Creche, jardim de inf\u00e2ncia",
+            "autor": "Ricardo Gon\u00e7alves, Miguel Carreta",
+            "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 57,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o m\u00f3vel + Rest API de / para an\u00e1lise estat\u00edstica e produ\u00e7\u00e3o de resultados",
+            "autor": "Rodrigo Taciano",
+            "orientador": "Duarte Neves",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 58,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o para identifica\u00e7\u00e3o de compet\u00eancias de diretores e alunos da Univ. Lus\u00f3fona",
+            "autor": "Rodrigo S\u00e1 Camarate Laires Dias; Miguel Gomes Fernandes Lopes",
+            "orientador": "Pedro Alves",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 59,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o para monitoriza\u00e7\u00e3o de uma central de energia renov\u00e1vel",
+            "autor": "Ana Beatriz Pires, Bruno Soares",
+            "orientador": "Gabriela Soares, L\u00facio Studer",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 60,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00e3o para processamento de dados de caudal em sistemas de distribui\u00e7\u00e3o de \u00e1gua",
+            "autor": "Nicole Arquissandas; Mariana D\u00f3rdio Herculano",
+            "orientador": "Lucio studer, Maria Almeida Silva",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 61,
+        "fields": {
+            "titulo": "Aplica\u00e7\u00f5es m\u00f3veis para reabilita\u00e7\u00e3o (Centro de Alcoit\u00e3o)",
+            "autor": "Mariana Lopes Do Livramento",
+            "orientador": "Pedro Alves, Sofia Naique",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 62,
+        "fields": {
+            "titulo": "Augmented BPM: A CxO Companion Portal",
+            "autor": "Ant\u00f3nio Francisco Chicambi Rocha",
+            "orientador": "Jo\u00e3o Caldeira",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 63,
+        "fields": {
+            "titulo": "Augmented Business Process Management: A CxO Companion Portal",
+            "autor": "Ant\u00f3nio Francisco Chicambi Rocha",
+            "orientador": "Jo\u00e3o Caldeira",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 64,
+        "fields": {
+            "titulo": "CV Tool \u2013 Plataforma de Gest\u00e3o de CVs",
+            "autor": "Dion\u00edsio Miron",
+            "orientador": "Rui Ribeiro",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 65,
+        "fields": {
+            "titulo": "Ciberseguran\u00e7a associada aos RPA",
+            "autor": "Rafael Louren\u00e7o Da Silva, Henrique Manuel Pinheiro Da Gama Franco",
+            "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 66,
+        "fields": {
+            "titulo": "Configurable  knowledge-base  for  an  intelligent tutoring system to enhance  algorithmic literacy through dialogue",
+            "autor": "Daniel Granja, Rodrigo Amaro",
+            "orientador": "Manuel Marques Pita",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 67,
+        "fields": {
+            "titulo": "Desenvolvimento de uma Interface Gr\u00e1fica Avan\u00e7ada (IGA) de Configura\u00e7\u00e3o de Sistemas Avi\u00f3nicos Espaciais",
+            "autor": "Ricardo Miguel Costa Lopes",
+            "orientador": "Daniel Silveira",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 68,
+        "fields": {
+            "titulo": "Desenvolvimento dum Dashboard para Monitoriza\u00e7\u00e3o em Tempo Real da Produ\u00e7\u00e3o e Consumo de Energia no Campus",
+            "autor": "Francisco Mendes Lucas Vinagre",
+            "orientador": "Lucio studer, Martijn Kuipers",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 69,
+        "fields": {
+            "titulo": "Dete\u00e7\u00e3o de presen\u00e7a de micropl\u00e1sticos em amostras de \u00e1gua mar\u00edtima",
+            "autor": "Damien Manuel Silva Nazario",
+            "orientador": "Daniel Fernandes, Jo\u00e3o P. Matos-Carvalho",
+            "curso": "Licenciatura em Ci\u00eancia de Dados",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 70,
+        "fields": {
+            "titulo": "Estudo de informa\u00e7\u00e3o de ocupa\u00e7\u00e3o de solo",
+            "autor": "Pedro Martins",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 71,
+        "fields": {
+            "titulo": "I-Equus: Indicadores para Medicina Veterin\u00e1ria Equ\u00eddea",
+            "autor": "Duarte Nuno Silva Chen",
+            "orientador": "Daniel Fernandes, Jo\u00e3o Pedro Carvalho",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 72,
+        "fields": {
+            "titulo": "Interface Azure para ERP",
+            "autor": "Tiago Fernandes Amaro",
+            "orientador": "Luis A. Gomes",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 73,
+        "fields": {
+            "titulo": "Modelo IA para MISRA-C",
+            "autor": "Alexandre Santos",
+            "orientador": "Daniel Silveira, Zuil Pirola",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 74,
+        "fields": {
+            "titulo": "O que usu\u00e1rios podem fazer para economizar energia",
+            "autor": "Tom\u00e1s Martins, Andr\u00e9 Vieira",
+            "orientador": "Wellington Oliveira",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 75,
+        "fields": {
+            "titulo": "OD \u2013 open doors using an APP",
+            "autor": "Guilherme Duarte Lopes Ribeiro",
+            "orientador": "Daniel Fernandes, Jo\u00e3o P. Matos-Carvalho",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 76,
+        "fields": {
+            "titulo": "Plataform BackOffice Uber Mercadorias",
+            "autor": "Telmo Flores Pato;  Tom\u00e1s Leal D\u00e2maso Maria",
+            "orientador": "Rui Santos",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 77,
+        "fields": {
+            "titulo": "Plataforma de Gest\u00e3o Integrada e Site de Alojamento Local",
+            "autor": "Bernardo Ricardo",
+            "orientador": "Rui Ribeiro",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 78,
+        "fields": {
+            "titulo": "Plataforma de gest\u00e3o de uma escola de skate",
+            "autor": "Rancisco De Brito Casimiro Barroso De Sousa",
+            "orientador": "L\u00facio Studer, Martim Mour\u00e3o",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 79,
+        "fields": {
+            "titulo": "Plugin DP para Alunos \u2013 integra\u00e7\u00e3o com GPT",
+            "autor": "Miguel Rodrigues Miranda Silva",
+            "orientador": "Bruno Cipriano, Rodrigo Correia",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 80,
+        "fields": {
+            "titulo": "Portal DEISI",
+            "autor": "Gon\u00e7alo Nunes, Rafael Sim\u00f5es",
+            "orientador": "L\u00facio Studer",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 81,
+        "fields": {
+            "titulo": "Power Platform Digital Transformation \u2013 Applications for Process Automation Solutions",
+            "autor": "Ricardo Alexandre Simoes Goncalves",
+            "orientador": "Ac\u00e1cio Carmona, Adriano Couto, Alexandre Banha, Alexandre Pereira, Ana Margarida Gomes Alexandre, Antonios Liapis, Ant\u00f3nio Fraz\u00e3o, Ant\u00f3nio Moreira Gon\u00e7alves, Bruno Cipriano, Bruno Saraiva, Bruno Saraiva, Carlos Fernandes, Cipriano Justo, Concei\u00e7\u00e3o Costa, Daniel Fernandes, Daniel Fernandes, Daniel Fernandes, Daniel Fernandes, Daniel Silveira, Daniel Silveira, Diogo Morais, Diogo de Andrade, Duarte Neves, Fernando Angelino, Fernando Teod\u00f3sio, Finite blocklength information theory, Francesco Costigliola, Gabriela Soares, Gabriela Soares, Gabriela Soares, Helena Rute Sofia, Houda Harkat, In\u00eas Oliveira, Iolanda Velho, Jayakody Arachchilage Dushantha Nalin Kumara, Jos\u00e9 Aser Lourenzo, Jos\u00e9 Cascais Br\u00e1s, Jos\u00e9 Cascais Br\u00e1s, Jos\u00e9 Faisca, Jos\u00e9 Rogado, Jo\u00e3o Caldeira, Jo\u00e3o Craveiro, Jo\u00e3o Ildefonso, Jo\u00e3o Lic\u00ednio, Jo\u00e3o Martins, Jo\u00e3o P. Matos-Carvalho, Jo\u00e3o Pavia, Jo\u00e3o Pedro Carvalho, Jo\u00e3o Pedro Carvalho, Luis A. Gomes, Luis Campos, Lu\u00eds Campos, Lu\u00eds Gomes, Lu\u00eds Jorge Costa, Lu\u00eds Miguel Campos, L\u00facio Studer, L\u00facio Studer, Manuel Costa Martins, Manuel Marques Pita, Manuel da Costa Leite, Maria Silva, Marko Beko, Marko Beko, Martijn Kuipers, Martim Mour\u00e3o, Micaela Fonseca, Micaela Fonseca, Miguel Moreno, Miguel Tavares, N/A, N/A, Naercio Magaia, Nuno Fachada, Nuno Manuel Garcia dos Santos, Nuno Maria Carvalho Pereira Fernandes Fachada, Nuno Pombo, Nuno Ricardo Mateus Coelho, Paulo Guedes, Paulo Mendes, Pedro Alves, Pedro Alves, Pedro Alves, Pedro Alves, Pedro Freire, Pedro Hugo De Queir\u00f3s Alves, Pedro Malta, Pedro Perdig\u00e3o, Pedro Santos, Pedro Serra, Phil Lopes, Phil Lopes, Prof. Dr. Nuno Maria Carvalho Pereira Fernandes Fachada Prof. Dr. Jo\u00e3o Pedro Leal Abalada de Matos Carvalho, Professor Dushantha Nalin Jayakoddy, Reda Benbernou, Ricardo Oliveira, Rodrigo Correia, Rui Dinis, Rui Ribeiro, Rui Ribeiro, Rui Santos, Sem orientador, Slavi\u0161a Tomi\u0107, Sofia Fernandes, Sofia Naique, S\u00e9rgio Duarte, S\u00e9rgio Ferreira, S\u00e9rgio Lu\u00eds Proen\u00e7a Duarte Guerreiro, S\u00e9rgio Nunes, Tiago Reis, Tiago Simas, Tiago dos Santos, Vania Machado, V\u00e2nia Maria Ponte Vidal, Wellington Oliveira, Zuil Pirola, Zuil Pirola, Zuil Pirola",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 82,
+        "fields": {
+            "titulo": "Recolha e Gest\u00e3o de Dados",
+            "autor": "F\u00e1bio Jorge Tom\u00e9",
+            "orientador": "Rui Ribeiro",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 83,
+        "fields": {
+            "titulo": "Registos M\u00e9dicos Online",
+            "autor": "Sebasti\u00e3o Forte Mid\u00f5es Coelho",
+            "orientador": "Iolanda Velho, L\u00facio Studer",
+            "curso": "Licenciatura em Inform\u00e1tica de Gest\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 84,
+        "fields": {
+            "titulo": "ScoutNow",
+            "autor": "Ricardo Duarte",
+            "orientador": "Rui Santos",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 85,
+        "fields": {
+            "titulo": "Sistemas de abertura de portas das salas de aulas",
+            "autor": "Jo\u00e3o Joyce, Tiago James",
+            "orientador": "Jos\u00e9 Cascais Br\u00e1s, Lu\u00eds Gomes",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 86,
+        "fields": {
+            "titulo": "SprintLab",
+            "autor": "Eduardo Miguel Godinho Calhancas; Diogo Andr\u00e9 Orf\u00e3o Ferreira",
+            "orientador": "Daniel Silveira, Rui Ribeiro",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 87,
+        "fields": {
+            "titulo": "Templates IDE Ardu\u00edno",
+            "autor": "Gon\u00e7alo Santos",
+            "orientador": "S\u00e9rgio Ferreira",
+            "curso": "Licenciatura em Engenharia Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 88,
+        "fields": {
+            "titulo": "Artificial Landscape Generation through Ant Colony Behaviour",
+            "autor": "Fl\u00e1vio Santos",
+            "orientador": "Diogo de Andrade, Jo\u00e3o P. Matos-Carvalho, Nuno Fachada",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 89,
+        "fields": {
+            "titulo": "Dete\u00e7\u00e3o r\u00e1pida de AVC hemorr\u00e1gico utilizando SERS e Machine Learning",
+            "autor": "Jo\u00e3o Eleut\u00e9rio",
+            "orientador": "Gabriela Soares, L\u00facio Studer",
+            "curso": "Mestrado em Ci\u00eancias de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 90,
+        "fields": {
+            "titulo": "Make Polarity Quantifiable Again \u2013 A Machine Learning Approach",
+            "autor": "Duarte Capinha, Jorge Botelho Moniz",
+            "orientador": "Iolanda Velho",
+            "curso": "Mestrado em Ci\u00eancias de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 91,
+        "fields": {
+            "titulo": "Modelagem de expectativas dos colaboradores: fatores pessoais e profissionais que influenciam a decis\u00e3o de perman\u00eancia \u00f3tica do colaborador",
+            "autor": "F\u00e1tima Yausuf",
+            "orientador": "Rui Ribeiro",
+            "curso": "Mestrado em Ci\u00eancias de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 92,
+        "fields": {
+            "titulo": "Modelos de Previs\u00e3o da Rotatividade para a Reten\u00e7\u00e3o de Colaboradores",
+            "autor": "Beatriz Pereira",
+            "orientador": "Rui Ribeiro",
+            "curso": "Mestrado em Ci\u00eancias de Dados",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 93,
+        "fields": {
+            "titulo": "Impacto da Transforma\u00e7\u00e3o Digital nas Organiza\u00e7\u00f5es: O Caso dos Bancos em Angola",
+            "autor": "Ant\u00f3nio Jo\u00e3o Mutumbua",
+            "orientador": "Rui Ribeiro",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 94,
+        "fields": {
+            "titulo": "Management System for HCI Experiments",
+            "autor": "Marcelo Alves",
+            "orientador": "Nuno Fachada",
+            "curso": "Mestrado em Engenharia Inform\u00e1tica e Sistemas de Informa\u00e7\u00e3o",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 95,
+        "fields": {
+            "titulo": "Performance Analysis of Optical Wireless Communication System",
+            "autor": "Mohammad Furqan Ali",
+            "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 96,
+        "fields": {
+            "titulo": "Re-Orienting Object-Oriented Programming Education: Automatic Assessment Tools and Large Language Models",
+            "autor": "Bruno Pereira Cipriano",
+            "orientador": "Pedro Hugo De Queir\u00f3s Alves",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2025,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 97,
+        "fields": {
+            "titulo": "Age of Information in Wireless Communication Systems",
+            "autor": "Wijerathna Basnayaka Mudiyanselage Chathuranga Madhushan Basnayaka",
+            "orientador": "Jayakody Arachchilage Dushantha Nalin Kumara, Marko Beko",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.tfc",
+        "pk": 98,
+        "fields": {
+            "titulo": "Multiple Access Networks Assisted by Aerial Intelligent Reflecting Surfaces",
+            "autor": "Brena Lima",
+            "orientador": "Marko Beko, Rui Dinis",
+            "curso": "Doutoramento em Inform\u00e1tica",
+            "ano": 2024,
+            "interesse": false,
+            "url": null,
+            "tecnologias": []
+        }
+    },
+    {
+        "model": "portfolio.competencia",
+        "pk": 1,
+        "fields": {
+            "nome": "Desenvolvimento Web",
+            "descricao": "Capacidade de desenvolver aplica\u00e7\u00f5es web completas, desde o design da base de dados at\u00e9 \u00e0 interface do utilizador.",
+            "nivel": "intermedio",
+            "tecnologias": [
+                1,
+                2
+            ],
+            "projetos": []
+        }
+    },
+    {
+        "model": "portfolio.formacao",
+        "pk": 1,
+        "fields": {
+            "nome": "Licenciatura em Engenharia Inform\u00e1tica",
+            "instituicao": "Universidade Lus\u00f3fona",
+            "descricao": "Curso superior na \u00e1rea de inform\u00e1tica com foco em desenvolvimento de software, sistemas de informa\u00e7\u00e3o e tecnologias web.",
+            "data_inicio": "2024-09-01",
+            "data_fim": null,
+            "certificado_url": null
+        }
+    },
+    {
+        "model": "portfolio.makingof",
+        "pk": 1,
+        "fields": {
+            "titulo": "Modela\u00e7\u00e3o inicial do Portf\u00f3lio",
+            "descricao": "Processo de modela\u00e7\u00e3o das entidades do portf\u00f3lio Django, incluindo decis\u00f5es de design e rela\u00e7\u00f5es entre modelos.",
+            "decisoes": "Cria\u00e7\u00e3o da entidade Docente como entidade adicional. Uso de ManyToManyField entre UC e Docente. Separa\u00e7\u00e3o de ano e semestre na UC.",
+            "erros_correcoes": "Inicialmente guardei o docente como texto simples. Corrigi criando a entidade pr\u00f3pria com rela\u00e7\u00e3o ManyToMany.",
+            "uso_ia": "Usei o Claude para sugerir atributos e gerar o DER inicial. Todas as decis\u00f5es finais foram minhas.",
+            "fotografia": "",
+            "data": "2026-04-07",
+            "entidade_relacionada": "Todas"
+        }
+    },
+    {
+        "model": "portfolio.makingof",
+        "pk": 2,
+        "fields": {
+            "titulo": "Carregamento de dados dos TFCs",
+            "descricao": "Criei um script Python para carregar os dados dos TFCs a partir do ficheiro JSON para a base de dados usando o ORM do Django.",
+            "decisoes": "Adicionei os campos autor e orientador ao modelo TFC pois estavam no JSON mas n\u00e3o estavam modelados inicialmente. Mapeei o campo rating para o campo interesse, considerando interesse=True quando rating >= 4.",
+            "erros_correcoes": "Ao fazer makemigrations apareceu erro porque o campo orientador n\u00e3o tinha valor por defeito. Resolvi colocando string vazia como default.",
+            "uso_ia": "Usei o Claude para me ajudar a criar o script de carregamento do JSON e a perceber o erro das migra\u00e7\u00f5es.",
+            "fotografia": "",
+            "data": "2026-04-07",
+            "entidade_relacionada": "TFC"
+        }
+    },
+    {
+        "model": "portfolio.makingof",
+        "pk": 3,
+        "fields": {
+            "titulo": "Carregamento de dados da API Lus\u00f3fona",
+            "descricao": "Usei a API p\u00fablica da Lus\u00f3fona para descarregar os dados do curso LEI e das suas Unidades Curriculares, carregando-os automaticamente na base de dados.",
+            "decisoes": "Decidi atualizar a descri\u00e7\u00e3o da Licenciatura com as raz\u00f5es do curso vindas da API, pois s\u00e3o informa\u00e7\u00e3o oficial e relevante. Carreguei todas as UCs automaticamente em vez de as inserir manualmente.",
+            "erros_correcoes": "O semestre na API vinha como c\u00f3digo S em vez de n\u00famero. Converti para 1 no script de carregamento.",
+            "uso_ia": "Usei o Claude para interpretar a estrutura do JSON da API e ajudar criar o script de carregamento.",
+            "fotografia": "",
+            "data": "2026-04-07",
+            "entidade_relacionada": "UnidadeCurricular, Licenciatura"
+        }
+    },
+    {
+        "model": "portfolio.makingof",
+        "pk": 4,
+        "fields": {
+            "titulo": "Configura\u00e7\u00e3o do Admin e boas pr\u00e1ticas",
+            "descricao": "Configurei o Admin do Django para cada modelo, definindo campos de pesquisa, filtros e visualiza\u00e7\u00e3o das tabelas. Segui as boas pr\u00e1ticas do professor, implementando um modelo de cada vez com commit por cada altera\u00e7\u00e3o.",
+            "decisoes": "Usei filter_horizontal para os campos ManyToMany pois torna a interface do Admin mais clara e f\u00e1cil de usar. Defini search_fields nos modelos mais importantes para facilitar a pesquisa de dados.",
+            "erros_correcoes": "Os nomes dos modelos no Admin apareciam com \"s\" no final de forma errada (ex: Competencias, Formacaos). Decidi deixar assim por n\u00e3o ser relevante para a avalia\u00e7\u00e3o.",
+            "uso_ia": "Usei o Claude para me ajudar nos passos de configura\u00e7\u00e3o do Admin.",
+            "fotografia": "",
+            "data": "2026-04-07",
+            "entidade_relacionada": "Todas"
+        }
+    },
+    {
+        "model": "escola.professor",
+        "pk": 1,
+        "fields": {
+            "nome": "L\u00facio Studer",
+            "email": "lucio.studer@ulht.pt"
+        }
+    },
+    {
+        "model": "escola.professor",
+        "pk": 3,
+        "fields": {
+            "nome": "Pedro Perdig\u00e3o",
+            "email": "pedro.perdigao@ulht.pt"
+        }
+    },
+    {
+        "model": "escola.professor",
+        "pk": 4,
+        "fields": {
+            "nome": "Lu\u00eds Sousa",
+            "email": "luis.sousa@ulht.pt"
+        }
+    },
+    {
+        "model": "escola.aluno",
+        "pk": 1,
+        "fields": {
+            "nome": "Miguel Baptista",
+            "numero": "22405192"
+        }
+    },
+    {
+        "model": "escola.aluno",
+        "pk": 2,
+        "fields": {
+            "nome": "Goncalo Goncalves",
+            "numero": "22405102"
+        }
+    },
+    {
+        "model": "escola.aluno",
+        "pk": 3,
+        "fields": {
+            "nome": "Lourenco Madeira",
+            "numero": "22405291"
+        }
+    },
+    {
+        "model": "escola.curso",
+        "pk": 1,
+        "fields": {
+            "nome": "django",
+            "imagem": "cursos/django.png",
+            "professor": 1,
+            "alunos": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "escola.curso",
+        "pk": 2,
+        "fields": {
+            "nome": "springboot",
+            "imagem": "cursos/springboot.png",
+            "professor": 3,
+            "alunos": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "escola.curso",
+        "pk": 3,
+        "fields": {
+            "nome": "next",
+            "imagem": "cursos/next.png",
+            "professor": 1,
+            "alunos": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "escola.curso",
+        "pk": 4,
+        "fields": {
+            "nome": "vue",
+            "imagem": "cursos/vue.png",
+            "professor": 4,
+            "alunos": [
+                1,
+                2,
+                3
+            ]
+        }
+    }
+]
